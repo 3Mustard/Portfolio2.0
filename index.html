@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <title>안녕하세요</title>
   <style>
-    header{
+    body {
+      background-color: peachpuff;
+    }
+    header {
       background: url(img/backgroundImage.jpg);
       background-size: cover;
       background-position: center;
@@ -90,9 +93,9 @@
           </a></li>
         </ul>
         <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#more" class="black-text">Projects</a></li>
-          <li><a href="#ttv" class="black-text">About</a></li>
-          <li><a href="#ttv" class="black-text">Contact</a></li>
+          <li><a href="#projects" class="black-text">Projects</a></li>
+          <li><a href="#about" class="black-text">About</a></li>
+          <li><a href="#contact" class="black-text">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -109,10 +112,10 @@
         <p>Keep track of important dates such as medications or feeding schedules and write notes for all your pets.</p>
         <h5 class="pink-text text-lighten-2">Technology Used</h5>
         <p>React/Redux, Ruby/Rails, Javascript, css/html</p>
-        <a href="#" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+        <a href="https://github.com/3Mustard/pet-organizer" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
           <i class="fab fa-github"></i>
         </a>
-        <a href="#" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+        <a href="https://drive.google.com/file/d/1KfvY_IcZdiH5MpGEWTAwVoLHbVyYV9mJ/view" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Demo" target="_blank"> 
           <i class="material-icons">ondemand_video</i>
         </a>
       </div>
@@ -126,10 +129,10 @@
         <p>Keep track of important dates such as medications or feeding schedules and write notes for all your pets.</p>
         <h5 class="pink-text text-lighten-2">Technology Used</h5>
         <p>React/Redux, Ruby/Rails, Javascript, css/html</p>
-        <a href="#" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+        <a href="" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
           <i class="fab fa-github"></i>
         </a>
-        <a href="#" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+        <a href="" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
           <i class="material-icons">ondemand_video</i>
         </a>
       </div>
@@ -161,30 +164,28 @@
   </div>
 
   <!-- song tab -->
-  <section class="container section scrollspy" id="more">
+  <section class="container section scrollspy" id="about">
     <div class="row">
         <div class="col s12 l4">
-            <h2 class="deep-purple-text">More & More</h2>
-            <p>More & More is the ninth Korean EP by the South Korean girl group Twice. It was released by JYP Entertainment and Republic Records on June 1, 2020, and features the lead single of the same name.</p>
+            <h2 class="deep-purple-text">About</h2>
+            <p>안녕하세요 Hello, I am a software developer experienced in Ruby/Rails, JavaScript and html/css . My favorite libraries to work with are React, Redux and Materializecss. I strive to write simple reusable code, collaborate with other developers, learn new technologies and express creativity. 
+            <p>When I'm not coding I enjoy reading,  playing with my cats, computer games, good food and learning. I am also studying Korean and hope to travel there in the future. I am currently open to new job opportunities so if you are a recruiter or know anyone who is hiring please reach out to me by <a href="mailto:m23.cullen@gmail.com">email</a> or call +1 (585) 831-0531
+            <p>“Determine that today you will overcome yourself of the day before.” -Miyamoto Musashi</p>
         </div>
         <div class="col s12 l6 offset-l2">
             <ul class="tabs">
                 <li class="tab col s6">
-                    <a href="#video1" class="deep-purple-text text-lighten-1">More&More M/V</a>
+                    <a href="#sleepy" class="deep-purple-text text-lighten-1">More&More M/V</a>
                 </li>
                 <li class="tab col s6">
-                    <a href="#video2" class="deep-purple-text text-lighten-1">More&More Live</a>
+                    <a href="#akira" class="deep-purple-text text-lighten-1">More&More Live</a>
                 </li>
             </ul>
-            <div class="col s12" id="video1">
-              <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mH0_XpSHkZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+            <div class="col s12" id="sleepy">
+              <img src="img/me.png" alt="" class="responsive-img materialboxed">
             </div>
-            <div class="col s12" id="video2">
-              <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MHbm4TvQGwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+            <div class="col s12" id="akira">
+              <img src="img/cats.jpg" alt="" class="responsive-img materialboxed">
             </div>
         </div>
     </div>
