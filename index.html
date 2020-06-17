@@ -33,7 +33,7 @@
       padding-bottom: 4vw;
     }
     .tabs .indicator{
-      background-color: white;
+      background-color: peachpuff;
     }
     .tabs .tab a:focus, .tabs .tab a:focus.active {
       background: transparent;
@@ -66,6 +66,9 @@
     label.active {
       color: #66bb6a !important;
     }
+    .tabs {
+      background-color:peachpuff;
+    }
   </style>
 </head>
 <body>
@@ -79,9 +82,11 @@
           <i class="material-icons black-text">dehaze</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#" class="black-text">Projects</a></li>
-          <li><a href="#" class="black-text">About</a></li>
-          <li><a href="#" class="black-text">Contact</a></li>
+          <li><a href="#projects1" class="black-text">Projects Part One</a></li>
+          <li><a href="#projects2" class="black-text">Projects Part Two</a></li>
+          <li><a href="#ongoing" class="black-text">Ongoing Work</a></li>
+          <li><a href="#about" class="black-text">About</a></li>
+          <li><a href="#contact" class="black-text">Contact</a></li>
           <li><a href="https://github.com/3Mustard" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
             <i class="fab fa-github"></i>
           </a></li>
@@ -93,7 +98,9 @@
           </a></li>
         </ul>
         <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#projects" class="black-text">Projects</a></li>
+          <li><a href="#projects1" class="black-text">Projects Part One</a></li>
+          <li><a href="#projects2" class="black-text">Projects Part Two</a></li>
+          <li><a href="#ongoing" class="black-text">Ongoing Work</a></li>
           <li><a href="#about" class="black-text">About</a></li>
           <li><a href="#contact" class="black-text">Contact</a></li>
         </ul>
@@ -102,7 +109,7 @@
   </header>
 
   <!-- 3 idols -->
-  <section class="container section" id="stuff">
+  <section class="container section scrollspy" id="projects1">
     <div class="row">
       <div class="col s12 l4">
           <img src="img/project1.jpg" alt="" class="responsive-img materialboxed">
@@ -164,28 +171,38 @@
   </div>
 
   <!-- song tab -->
-  <section class="container section scrollspy" id="about">
+  <section class="container section scrollspy" id="ongoing">
     <div class="row">
         <div class="col s12 l4">
-            <h2 class="deep-purple-text">About</h2>
-            <p>안녕하세요 Hello, I am a software developer experienced in Ruby/Rails, JavaScript and html/css . My favorite libraries to work with are React, Redux and Materializecss. I strive to write simple reusable code, collaborate with other developers, learn new technologies and express creativity. 
-            <p>When I'm not coding I enjoy reading,  playing with my cats, computer games, good food and learning. I am also studying Korean and hope to travel there in the future. I am currently open to new job opportunities so if you are a recruiter or know anyone who is hiring please reach out to me by <a href="mailto:m23.cullen@gmail.com">email</a> or call +1 (585) 831-0531
-            <p>“Determine that today you will overcome yourself of the day before.” -Miyamoto Musashi</p>
+            <h2 class="deep-purple-text">Current projects and goals</h2>
+            <h5>Learning</h5>
+            <ul>
+              <li>Node.js</li>
+              <li>AWS</li>
+              <li>TypeScript</li>
+              <li>Korean language</li>
+            </ul>
+            <h5>Projects</h5>
+            <ul>
+              <li>100 algorithm challenge</li>
+              <li>Exploring React/Redux with Google firebase/firestore</li>
+              <li>Kpop fan site to learn materializecss</li>
+            </ul>
         </div>
         <div class="col s12 l6 offset-l2">
             <ul class="tabs">
                 <li class="tab col s6">
-                    <a href="#sleepy" class="deep-purple-text text-lighten-1">More&More M/V</a>
+                    <a href="tab3" class="deep-purple-text text-lighten-1">React/Redux with Firebase</a>
                 </li>
                 <li class="tab col s6">
-                    <a href="#akira" class="deep-purple-text text-lighten-1">More&More Live</a>
+                    <a href="tab4" class="deep-purple-text text-lighten-1">100 algortihm challenge</a>
                 </li>
             </ul>
-            <div class="col s12" id="sleepy">
-              <img src="img/me.png" alt="" class="responsive-img materialboxed">
+            <div class="col s12" id="tab3">
+              <img src="" alt="" class="responsive-img materialboxed">
             </div>
-            <div class="col s12" id="akira">
-              <img src="img/cats.jpg" alt="" class="responsive-img materialboxed">
+            <div class="col s12" id="tab4">
+              <img src="" alt="" class="responsive-img materialboxed">
             </div>
         </div>
     </div>
@@ -199,7 +216,7 @@
   </div>
 
   <!-- 3 idols  -->
-  <section class="container section" id="stuff">
+  <section class="container section scrollspy" id="projects2">
     <div class="row">
       <div class="col s12 l4">
           <img src="img/img1.jpg" alt="" class="responsive-img materialboxed">
@@ -244,8 +261,43 @@
     </div>
   </section>
 
+  <!-- parallax -->
+  <div class="parallax-container hide-on-med-and-down">
+    <div class="parallax">
+        <img src="img/parallax1.jpg" alt="twice-parallax" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- song tab -->
+  <section class="container section scrollspy" id="about">
+    <div class="row">
+        <div class="col s12 l4">
+            <h2 class="deep-purple-text">About</h2>
+            <p>안녕하세요 Hello, I am a software developer experienced in Ruby/Rails, JavaScript and html/css . My favorite libraries to work with are React, Redux and Materializecss. I strive to write simple reusable code, collaborate with other developers, learn new technologies and express creativity. 
+            <p>When I'm not coding I enjoy reading,  playing with my cats, computer games, good food and learning. I am also studying Korean and hope to travel there in the future. I am currently open to new job opportunities so if you are a recruiter or know anyone who is hiring please reach out to me by <a href="mailto:m23.cullen@gmail.com">email</a> or call +1 (585) 831-0531
+            <p>“Determine that today you will overcome yourself of the day before.” -Miyamoto Musashi</p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+                <li class="tab col s6">
+                    <a href="#tab1" class="deep-purple-text text-lighten-1">Myself</a>
+                </li>
+                <li class="tab col s6">
+                    <a href="#tab2" class="deep-purple-text text-lighten-1">Some cats</a>
+                </li>
+            </ul>
+            <div class="col s12" id="tab1">
+              <img src="img/me.png" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12" id="tab2">
+              <img src="img/cats.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+        </div>
+    </div>
+  </section>
+
   <!-- footer -->
-  <footer class="page-footer grey darken-3 scrollspy">
+  <footer class="page-footer grey darken-3 scrollspy" id="contact">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
