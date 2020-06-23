@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <title>안녕하세요</title>
+  <title>Portfolio2.0</title>
   <style>
     body {
       background-color: peachpuff;
@@ -26,11 +26,15 @@
       }
     }
     .parallax-container {
-      height: 550px;
+      height: 650px;
     }
     .section{
       padding-top: 4vw;
       padding-bottom: 4vw;
+    }
+    .tabs {
+      background-color:peachpuff;
+      margin-bottom: 5px;
     }
     .tabs .indicator{
       background-color: peachpuff;
@@ -66,9 +70,6 @@
     label.active {
       color: #66bb6a !important;
     }
-    .tabs {
-      background-color:peachpuff;
-    }
     .link {
       color:white;
       text-decoration: none; 
@@ -85,7 +86,7 @@
   <header>
     <nav class="nav-wrapper transparent">
       <div class="container">
-        <a href="#" class="brand-logo black-text">Matthew Cullen</a>
+        <a href="#" class="brand-logo grey-text text-darken-4">Matthew Cullen</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-menu">
           <i class="material-icons black-text">dehaze</i>
         </a>
@@ -115,12 +116,12 @@
   </header>
 
   <!-- projects -->
-  <div class="container">
-    <h1 class="center-align">Projects</h1>
+  <div class="container" id="projects1">
+    <h1 class="center-align grey-text text-darken-4">Projects</h1>
     <div class="divider black"></div>
-  </div>
+  </div>     
 
-  <section class="container section scrollspy projects-container center-align" id="projects1">
+  <section class="container section scrollspy projects-container center-align">
     <div class="row project-row">
       <div class="col s12 l4">
           <img src="img/project1.jpg" alt="" class="responsive-img materialboxed">
@@ -169,7 +170,7 @@
         <h2 class="pink-text text-lighten-1">Book Review App</h2>
         <p>Read, write and comment on book reviews. Users can sign up or login with a google account.</p>
         <h5 class="pink-text text-lighten-2">Technology Used</h5>
-        <p>Ruby/Rails, sqlite</p>
+        <p>Ruby/Rails, JavaScript, sqlite3</p>
         <h6 class="pink-text text-lighten-3">
           <a href="https://github.com/3Mustard/book_reviewer" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
             <i class="fab fa-github"></i>
@@ -189,7 +190,7 @@
         <h2 class="pink-text text-lighten-1">TWICE fansite with materializecss</h2>
         <p>Bio of each member of my favorite korean group. Learning how to style html.</p>
         <h5 class="pink-text text-lighten-2">Technology Used</h5>
-        <p>css/html/javascritp and materializecss library</p>
+        <p>css/html/javascript and materializecss library</p>
         <h6 class="pink-text text-lighten-3">
           <a href="https://github.com/3Mustard/TWICE" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
             <i class="fab fa-github"></i>
@@ -209,7 +210,7 @@
         <h2 class="pink-text text-lighten-1">Virtual Bookcase with Sinatra</h2>
         <p>Organize and keep track of your books with this virtual bookcase.</p>
         <h5 class="pink-text text-lighten-2">Technology Used</h5>
-        <p>Ruby, Sinatra Framework, css/html</p>
+        <p>Ruby, Sinatra, css/html</p>
         <h6 class="pink-text text-lighten-3">
           <a href="https://github.com/3Mustard/online-library" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
             <i class="fab fa-github"></i>
@@ -221,68 +222,51 @@
       </div>
     </div>
   </section>
-  
-  <!-- parallax -->
-  <div class="parallax-container hide-on-med-and-down">
-    <div class="parallax">
-        <img src="img/parallax1.jpg" alt="twice-parallax" class="responsive-img">
-    </div>
-  </div>
 
   <!-- ongoing work -->
-  <section class="container section scrollspy" id="ongoing">
+  <div class="container" id="ongoing">
+    <h1 class="center-align grey-text text-darken-4">Ongoing Work</h1>
+    <div class="divider black"></div>
+  </div> 
+
+  <section class="container section scrollspy">
     <div class="row">
-        <div class="col s12 l4">
-            <h2 class="deep-purple-text">Current projects and goals</h2>
-            <h5>Learning</h5>
-            <ul>
-              <li>Node.js</li>
-              <li>AWS</li>
-              <li>TypeScript</li>
-              <li>Korean language</li>
-            </ul>
-            <h5>Projects</h5>
-            <ul>
-              <li>100 algorithm challenge</li>
-              <li>Exploring React/Redux with Google firebase/firestore</li>
-              <li>Kpop fan site to learn materializecss</li>
-            </ul>
+        <div class="col s12 l4 center-align">
+          <h2 class="center-align deep-purple-text">Learning</h2>
+          <ul>
+            <li>Node.js</li>
+            <li>AWS</li>
+            <li>TypeScript</li>
+            <li>Korean language</li>
+          </ul>
         </div>
-        <div class="col s12 l6 offset-l2">
-            <ul class="tabs">
-                <li class="tab col s6">
-                    <a href="#tab3" class="deep-purple-text text-lighten-1">React/Redux with Firebase</a>
-                </li>
-                <li class="tab col s6">
-                    <a href="#tab4" class="deep-purple-text text-lighten-1">100 algortihm challenge</a>
-                </li>
-            </ul>
-            <div class="col s12" id="tab3">
-              <a href="https://github.com/3Mustard/React-Redux-with-Firebase" target="_blank">
-                <img src="img/react.jpg" alt="react" class="responsive-img">
-              </a>
-            </div>
-            <div class="col s12" id="tab4">
-              <a href="https://github.com/3Mustard/100AlgorithmsChallenge" target="_blank">
-                <img src="img/algortihm.jpg" alt="algorithm" class="responsive-img">
-              </a>
-            </div>
-        </div>
+        <div class="col s12 l6 offset-l2 center-align">
+          <h2 class="center-align deep-purple-text">Projects</h2>
+          <ul>
+            <li>100 algorithm challenge</li>
+            <li>Exploring React/Redux with Google firebase/firestore</li>
+            <li>Kpop bios site</li>
+            <li>Chat based multiplayer game with a bot</li>
+          </ul>
     </div>
   </section>
 
   <!-- parallax -->
-  <div class="parallax-container hide-on-med-and-down">
+  <div class="parallax-container">
     <div class="parallax">
         <img src="img/parallax3.jpg" alt="twice-parallax" class="responsive-img">
     </div>
   </div>
 
   <!-- about tab -->
-  <section class="container section scrollspy" id="about">
+  <div class="container" id="about">
+    <h1 class="center-align grey-text text-darken-4">About</h1>
+    <div class="divider black"></div>
+  </div> 
+
+  <section class="container section scrollspy center-align">
     <div class="row">
         <div class="col s12 l4">
-            <h2 class="deep-purple-text">About</h2>
             <p>안녕하세요 Hello, I am a software developer experienced in Ruby/Rails, JavaScript and html/css . My favorite libraries to work with are React, Redux and Materializecss. I strive to write simple reusable code, collaborate with other developers, learn new technologies and express creativity. 
             <p>When I'm not coding I enjoy reading,  playing with my cats, computer games, good food and learning. I am also studying Korean and hope to travel there in the future. I am currently open to new job opportunities so if you are a recruiter or know anyone who is hiring please reach out to me by <a href="mailto:m23.cullen@gmail.com">email</a> or call at <a href="tel:+15858310531">+1 (585) 831-0531</a>
         </div>
@@ -331,7 +315,7 @@
   
   <!-- Floating action button -->
   <div class="fixed-action-btn" >
-    <a href="#top" class="btn-floating btn-medium pink lighten-4">
+    <a href="#top" class="btn-floating btn-medium grey darken-4">
       <i class="large material-icons">publish</i>
     </a>
   </div>
@@ -349,9 +333,6 @@
       $('.tooltipped').tooltip();
       $('.scrollspy').scrollSpy(); 
       $('.fixed-action-btn').floatingActionButton();
-      $('.slider').slider({
-        height: 600
-      });
 
     });
   </script>
