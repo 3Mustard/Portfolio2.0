@@ -74,6 +74,9 @@
       text-decoration: none; 
       background-color: none;
     }
+    .project-row {
+      margin-bottom: 60px;
+    }
   </style>
 </head>
 <body>
@@ -82,13 +85,12 @@
   <header>
     <nav class="nav-wrapper transparent">
       <div class="container">
-        <a href="#" class="brand-logo black-text">Matthew's Portfolio</a>
+        <a href="#" class="brand-logo black-text">Matthew Cullen</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-menu">
           <i class="material-icons black-text">dehaze</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#projects1" class="black-text">Projects Part One</a></li>
-          <li><a href="#projects2" class="black-text">Projects Part Two</a></li>
+          <li><a href="#projects1" class="black-text">Projects</a></li>
           <li><a href="#ongoing" class="black-text">Ongoing Work</a></li>
           <li><a href="#about" class="black-text">About</a></li>
           <li><a href="#contact" class="black-text">Contact</a></li>
@@ -103,8 +105,7 @@
           </a></li>
         </ul>
         <ul class="sidenav grey lighten-2" id="mobile-menu">
-          <li><a href="#projects1" class="black-text">Projects Part One</a></li>
-          <li><a href="#projects2" class="black-text">Projects Part Two</a></li>
+          <li><a href="#projects1" class="black-text">Projects</a></li>
           <li><a href="#ongoing" class="black-text">Ongoing Work</a></li>
           <li><a href="#about" class="black-text">About</a></li>
           <li><a href="#contact" class="black-text">Contact</a></li>
@@ -114,8 +115,13 @@
   </header>
 
   <!-- projects -->
-  <section class="container section scrollspy" id="projects1">
-    <div class="row">
+  <div class="container">
+    <h1 class="center-align">Projects</h1>
+    <div class="divider black"></div>
+  </div>
+
+  <section class="container section scrollspy projects-container" id="projects1">
+    <div class="row project-row">
       <div class="col s12 l4">
           <img src="img/project1.jpg" alt="" class="responsive-img materialboxed">
       </div>
@@ -124,34 +130,38 @@
         <p>Keep track of important dates such as medications or feeding schedules and write notes for all your pets.</p>
         <h5 class="pink-text text-lighten-2">Technology Used</h5>
         <p>React/Redux, Ruby/Rails, Javascript, css/html</p>
-        <h6 class="pink-text text-lighten-3">Github/Demo</h6>
-        <a href="https://github.com/3Mustard/pet-organizer" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://drive.google.com/file/d/1KfvY_IcZdiH5MpGEWTAwVoLHbVyYV9mJ/view" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Demo" target="_blank"> 
-          <i class="material-icons">ondemand_video</i>
-        </a>
+        <h6 class="pink-text text-lighten-3">
+          <a href="https://github.com/3Mustard/pet-organizer" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1KfvY_IcZdiH5MpGEWTAwVoLHbVyYV9mJ/view" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Demo" target="_blank"> 
+            <i class="material-icons">ondemand_video</i>
+          </a>
+        </h6>
       </div>
     </div>
-    <div class="row">
-      <div class="col s12 l4 offset-l1 push-l7">
+
+    <div class="row project-row">
+      <div class="col s12 l4">
           <img src="img/project2.jpg" alt="" class="responsive-img materialboxed">
       </div>
-      <div class="col s12 l6 offset-l1 pull-l5 left-align">
+      <div class="col s12 l6 offset-l1">
         <h2 class="pink-text text-lighten-1">Fortune Teller</h2>
         <p>Ask a question and let the cards answer. Features several different tarot card spreads for different fortunes.</p>
         <h5 class="pink-text text-lighten-2">Technology Used</h5>
         <p>Ruby/Rails, Javascript, css/html, Bootstrap, Postgresql</p>
-        <h6 class="pink-text text-lighten-3">Github/Demo</h6>
-        <a href="https://github.com/3Mustard/rails-fortune-api-client" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://drive.google.com/file/d/1JKkC5vqP-9lVt8NnJHUdkmhxf8g17ckC/view" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
-          <i class="material-icons">ondemand_video</i>
-        </a>
+        <h6 class="pink-text text-lighten-3">
+          <a href="https://github.com/3Mustard/rails-fortune-api-client" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1JKkC5vqP-9lVt8NnJHUdkmhxf8g17ckC/view" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+            <i class="material-icons">ondemand_video</i>
+          </a>
+        </h6>
       </div>
     </div>
-    <div class="row">
+
+    <div class="row project-row">
       <div class="col s12 l4">
           <img src="img/project3.jpg" alt="" class="responsive-img materialboxed">
       </div>
@@ -160,22 +170,63 @@
         <p>Read, write and comment on book reviews. Users can sign up or login with a google account.</p>
         <h5 class="pink-text text-lighten-2">Technology Used</h5>
         <p>Ruby/Rails, sqlite</p>
-        <h6 class="pink-text text-lighten-3">Github/Demo</h6>
-        <a href="https://github.com/3Mustard/book_reviewer" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://drive.google.com/file/d/1eODDNz2ufV-LcjCX7ZU2OKaj7INSHQ9o/view" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
-          <i class="material-icons">ondemand_video</i>
-        </a>
+        <h6 class="pink-text text-lighten-3">
+          <a href="https://github.com/3Mustard/book_reviewer" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1eODDNz2ufV-LcjCX7ZU2OKaj7INSHQ9o/view" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+            <i class="material-icons">ondemand_video</i>
+          </a>
+        </h6>
+      </div>
+    </div>
+
+    <div class="row project-row">
+      <div class="col s12 l4">
+          <img src="img/twice.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="pink-text text-lighten-1">TWICE fansite with materializecss</h2>
+        <p>Bio of each member of my favorite korean group. Learning how to style html.</p>
+        <h5 class="pink-text text-lighten-2">Technology Used</h5>
+        <p>css/html/javascritp and materializecss library</p>
+        <h6 class="pink-text text-lighten-3">
+          <a href="https://github.com/3Mustard/TWICE" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://3mustard.github.io/TWICE/" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Demo" target="_blank"> 
+            <i class="material-icons">favorite</i>
+          </a>
+        </h6>
+      </div>
+    </div>
+    
+    <div class="row project-row">
+      <div class="col s12 l4">
+          <img src="img/project4.jpg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <h2 class="pink-text text-lighten-1">Virtual Bookcase with Sinatra</h2>
+        <p>Organize and keep track of your books with this virtual bookcase.</p>
+        <h5 class="pink-text text-lighten-2">Technology Used</h5>
+        <p>Ruby, Sinatra Framework, css/html</p>
+        <h6 class="pink-text text-lighten-3">
+          <a href="https://github.com/3Mustard/online-library" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/14UGfD28uL4N1LtGagqfpY1CxxtMZz7GJ/view" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Demo" target="_blank"> 
+            <i class="material-icons">ondemand_video</i>
+          </a>
+        </h6>
       </div>
     </div>
   </section>
   
   <!-- parallax -->
   <div class="parallax-container hide-on-med-and-down">
-      <div class="parallax">
-          <img src="img/parallax2.jpg" alt="twice-parallax" class="responsive-img">
-      </div>
+    <div class="parallax">
+        <img src="img/parallax1.jpg" alt="twice-parallax" class="responsive-img">
+    </div>
   </div>
 
   <!-- ongoing work -->
@@ -217,52 +268,6 @@
               </a>
             </div>
         </div>
-    </div>
-  </section>
-
-  <!-- parallax -->
-  <div class="parallax-container hide-on-med-and-down">
-    <div class="parallax">
-        <img src="img/parallax1.jpg" alt="twice-parallax" class="responsive-img">
-    </div>
-  </div>
-
-  <!-- projetcs2  -->
-  <section class="container section scrollspy" id="projects2">
-    <div class="row">
-      <div class="col s12 l4">
-          <img src="img/project4.jpg" alt="" class="responsive-img materialboxed">
-      </div>
-      <div class="col s12 l6 offset-l1">
-        <h2 class="pink-text text-lighten-3">Virtual Bookcase with Sinatra</h2>
-        <p>Organize and keep track of your books with this virtual bookcase.</p>
-        <h5 class="pink-text text-lighten-2">Technology Used</h5>
-        <p>Ruby, Sinatra Framework, css/html</p>
-        <h6 class="pink-text text-lighten-3">Github/Demo</h6>
-        <a href="https://github.com/3Mustard/online-library" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://drive.google.com/file/d/14UGfD28uL4N1LtGagqfpY1CxxtMZz7GJ/view" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Demo" target="_blank"> 
-          <i class="material-icons">ondemand_video</i>
-        </a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 l4 offset-l1 push-l7">
-          <img src="img/twice.jpg" alt="" class="responsive-img materialboxed">
-      </div>
-      <div class="col s12 l6 offset-l1 pull-l5 right-align">
-        <h2 class="pink-text text-lighten-3">TWICE fansite with materializecss</h2>
-        <p>Bio of each member of my favorite korean group. Learning how to style html.</p>
-        <h5 class="pink-text text-lighten-2">Technology Used</h5>
-        <p>css/html/javascritp and materializecss library</p>
-        <h6 class="pink-text text-lighten-3">Github/Live Site</h6>
-        <a href="https://github.com/3Mustard/TWICE" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://3mustard.github.io/TWICE/" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Demo" target="_blank"> 
-          <i class="material-icons">favorite</i>
-        </a>
     </div>
   </section>
 
@@ -344,6 +349,9 @@
       $('.tooltipped').tooltip();
       $('.scrollspy').scrollSpy(); 
       $('.fixed-action-btn').floatingActionButton();
+      $('.slider').slider({
+        height: 600
+      });
 
     });
   </script>
