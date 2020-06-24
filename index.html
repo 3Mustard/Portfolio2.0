@@ -12,10 +12,10 @@
   <title>Portfolio2.0</title>
   <style>
     body {
-      background-color: peachpuff;
+      background-color: white;
     }
     header {
-      background: url(img/backgroundImage.jpg);
+      background: url(img/parallax4.jpg);
       background-size: cover;
       background-position: center;
       min-height: 1000px;
@@ -32,48 +32,13 @@
       padding-top: 4vw;
       padding-bottom: 4vw;
     }
-    .tabs {
-      background-color:peachpuff;
-      margin-bottom: 5px;
-    }
-    .tabs .indicator{
-      background-color: peachpuff;
-    }
-    .tabs .tab a:focus, .tabs .tab a:focus.active {
-      background: transparent;
-    }
-    .picker { 
-      outline: none; 
-    }
-    .datepicker-date-display {
-      background-color: #81c784;
-    }
-    .datepicker-table td.is-selected {
-      background: #81c784 !important;
-    }
-    .datepicker-cancel, .datepicker-done {
-      color: #81c784;
-    }
-    .is-today {
-      color: #81c784 !important;
-    }
-    input[type="checkbox"]:checked + span:not(.lever)::before {
-      border:2px solid transparent;
-      border-bottom:2px solid #81c784;
-      border-right:2px solid #81c784;
-      background:transparent;
-    }
-    input:focus {
-      border-bottom: 1px solid #66bb6a !important;
-      box-shadow: 0 1px 0 0 #66bb6a !important;
-    }
-    label.active {
-      color: #66bb6a !important;
-    }
     .link {
       color:white;
       text-decoration: none; 
       background-color: none;
+    }
+    .page-footer {
+      padding-bottom: 1px;
     }
     .project-row {
       margin-bottom: 60px;
@@ -86,15 +51,11 @@
   <header>
     <nav class="nav-wrapper transparent">
       <div class="container scrollspy" id="nav">
-        <a href="#" class="brand-logo grey-text text-darken-4">Matthew Cullen</a>
+        <a href="#" class="brand-logo grey-text text-darken-4" >어서 오세요</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-menu">
           <i class="material-icons black-text">dehaze</i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#projects1" class="black-text">Projects</a></li>
-          <li><a href="#ongoing" class="black-text">Ongoing Work</a></li>
-          <li><a href="#about" class="black-text">About</a></li>
-          <li><a href="#contact" class="black-text">Contact</a></li>
           <li><a href="https://github.com/3Mustard" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
             <i class="fab fa-github"></i>
           </a></li>
@@ -115,9 +76,53 @@
     </nav>
   </header>
 
+  <!-- about tab -->
+  <section class="container section scrollspy center-align about-section">
+    <div class="row">
+        <div class="col s12 l4">
+            <h3 class="center-align grey-text text-darken-4">Full Stack Developer</h3>
+            <div class="divider black"></div>
+            <p class="flow-text">I strive to write simple reusable code, collaborate with other developers, learn new technologies, master my skills, solve problems and express creativity.</p>
+            <ul>Contact
+              <li><a href="mailto:m23.cullen@gmail.com">m23.cullen@gmail.com</a></li>
+              <li><a href="tel:+15858310531">+1 (585) 831-0531</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 right">
+          <h3 class="center-align grey-text text-darken-4">Technical Skills</h3>
+          <div class="divider black"></div>
+          <p class="flow-text">Ruby, Rails, SQL, JavaScript, React, Redux, Python, HTML/CSS, Git, GoogleFirebase, Algorithm design and analysis, Linux, Data structures, MaterializeCSS</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 center-align">
+        <h4 class="center-align">Currently Learning</h4>
+        <ul>
+          <li>Node.js</li>
+          <li>AWS</li>
+          <li>TypeScript</li>
+          <li>Korean language</li>
+        </ul>
+        <h4 class="center-align">Current Projects</h4>
+        <a href="https://github.com/3Mustard/100AlgorithmsChallenge" target="_blank">100 Algorithms Challenge</a> </br>
+        <a href="https://github.com/3Mustard/React-Redux-with-Firebase" target="_blank">Project management with React/Redux and Google Firebase</a> </br>
+        Chat bot multiplayer game
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container hide-on-med-and-down">
+    <div class="parallax">
+        <img src="img/backgroundImage3.jpg" alt="twice-parallax" class="responsive-img">
+    </div>
+  </div>
+
   <!-- projects -->
   <div class="container scrollspy" id="projects1">
-    <h1 class="center-align grey-text text-darken-4">Projects</h1>
+    <h3 class="center-align grey-text text-darken-4">Past Work</h3>
     <div class="divider black"></div>
   </div>     
 
@@ -127,10 +132,10 @@
           <img src="img/project1.jpg" alt="" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1">
-        <h2 class="pink-text text-lighten-1">Pet Organizer</h2>
-        <p>Keep track of important dates such as medications or feeding schedules and write notes for all your pets.</p>
-        <h5 class="pink-text text-lighten-2">Technology Used</h5>
-        <p>React/Redux, Ruby/Rails, Javascript, css/html</p>
+        <h5>Pet Organizer</h5>
+        <p>Keep track of important dates/notes such as medications, feeding schedules and vet appointments.</p>
+        <h5>Technology Used</h5>
+        <p>React/Redux, Ruby/Rails, Javascript, css/html, sqlite3</p>
         <h6 class="pink-text text-lighten-3">
           <a href="https://github.com/3Mustard/pet-organizer" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
             <i class="fab fa-github"></i>
@@ -144,32 +149,12 @@
 
     <div class="row project-row">
       <div class="col s12 l4">
-          <img src="img/project2.jpg" alt="" class="responsive-img materialboxed">
-      </div>
-      <div class="col s12 l6 offset-l1">
-        <h2 class="pink-text text-lighten-1">Fortune Teller</h2>
-        <p>Ask a question and let the cards answer. Features several different tarot card spreads for different fortunes.</p>
-        <h5 class="pink-text text-lighten-2">Technology Used</h5>
-        <p>Ruby/Rails, Javascript, css/html, Bootstrap, Postgresql</p>
-        <h6 class="pink-text text-lighten-3">
-          <a href="https://github.com/3Mustard/rails-fortune-api-client" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://drive.google.com/file/d/1JKkC5vqP-9lVt8NnJHUdkmhxf8g17ckC/view" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
-            <i class="material-icons">ondemand_video</i>
-          </a>
-        </h6>
-      </div>
-    </div>
-
-    <div class="row project-row">
-      <div class="col s12 l4">
           <img src="img/project3.jpg" alt="" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1">
-        <h2 class="pink-text text-lighten-1">Book Review App</h2>
-        <p>Read, write and comment on book reviews. Users can sign up or login with a google account.</p>
-        <h5 class="pink-text text-lighten-2">Technology Used</h5>
+        <h5>Book Review App</h5>
+        <p>Read, write and comment on book reviews. Features login/signup with existing Google accounts.</p>
+        <h5>Technology Used</h5>
         <p>Ruby/Rails, JavaScript, sqlite3</p>
         <h6 class="pink-text text-lighten-3">
           <a href="https://github.com/3Mustard/book_reviewer" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
@@ -184,19 +169,19 @@
 
     <div class="row project-row">
       <div class="col s12 l4">
-          <img src="img/twice.jpg" alt="" class="responsive-img materialboxed">
+          <img src="img/project2.jpg" alt="" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1">
-        <h2 class="pink-text text-lighten-1">TWICE fansite with materializecss</h2>
-        <p>Bio of each member of my favorite korean group. Learning how to style html.</p>
-        <h5 class="pink-text text-lighten-2">Technology Used</h5>
-        <p>css/html/javascript and materializecss library</p>
+        <h5>Fortune Teller</h5>
+        <p>Simple fortune teller</p>
+        <h5>Technology Used</h5>
+        <p>Ruby/Rails, Javascript, css/html, Bootstrap, Postgresql</p>
         <h6 class="pink-text text-lighten-3">
-          <a href="https://github.com/3Mustard/TWICE" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+          <a href="https://github.com/3Mustard/rails-fortune-api-client" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://3mustard.github.io/TWICE/" class="btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Demo" target="_blank"> 
-            <i class="material-icons">favorite</i>
+          <a href="https://drive.google.com/file/d/1JKkC5vqP-9lVt8NnJHUdkmhxf8g17ckC/view" class="tooltipped btn-floating btn-small pink lighten-4" data-position="bottom" data-tooltip="Github" target="_blank"> 
+            <i class="material-icons">ondemand_video</i>
           </a>
         </h6>
       </div>
@@ -207,10 +192,10 @@
           <img src="img/project4.jpg" alt="" class="responsive-img materialboxed">
       </div>
       <div class="col s12 l6 offset-l1">
-        <h2 class="pink-text text-lighten-1">Virtual Bookcase with Sinatra</h2>
+        <h5>Virtual Bookcase with Sinatra</h5>
         <p>Organize and keep track of your books with this virtual bookcase.</p>
-        <h5 class="pink-text text-lighten-2">Technology Used</h5>
-        <p>Ruby, Sinatra, css/html</p>
+        <h5>Technology Used</h5>
+        <p>Ruby, Sinatra, sqlite3, css/html</p>
         <h6 class="pink-text text-lighten-3">
           <a href="https://github.com/3Mustard/online-library" class="btn-floating btn-small pink lighten-4" target="_blank"> 
             <i class="fab fa-github"></i>
@@ -220,56 +205,6 @@
           </a>
         </h6>
       </div>
-    </div>
-  </section>
-
-  <!-- ongoing work -->
-  <div class="container scrollspy" id="ongoing">
-    <h1 class="center-align grey-text text-darken-4">Ongoing Work</h1>
-    <div class="divider black"></div>
-  </div> 
-
-  <section class="container section scrollspy">
-    <div class="row">
-        <div class="col s12 l4 center-align">
-          <h2 class="center-align deep-purple-text">Learning</h2>
-          <ul>
-            <li>Node.js</li>
-            <li>AWS</li>
-            <li>TypeScript</li>
-            <li>Korean language</li>
-          </ul>
-        </div>
-        <div class="col s12 l6 offset-l2 center-align">
-          <h2 class="center-align deep-purple-text">Projects</h2>
-          <a href="https://github.com/3Mustard/100AlgorithmsChallenge" target="_blank">100AlgorithmsChallenge</a> </br>
-          <a href="https://github.com/3Mustard/React-Redux-with-Firebase" target="_blank">React/Redux with Google Firebase</a> </br>
-          Chat bot multiplayer game
-    </div>
-  </section>
-
-  <!-- parallax -->
-  <div class="parallax-container hide-on-med-and-down">
-    <div class="parallax">
-        <img src="img/parallax3.jpg" alt="twice-parallax" class="responsive-img">
-    </div>
-  </div>
-
-  <!-- about tab -->
-  <div class="container scrollspy" id="about">
-    <h1 class="center-align grey-text text-darken-4">About</h1>
-    <div class="divider black"></div>
-  </div> 
-
-  <section class="container section scrollspy center-align">
-    <div class="row">
-        <div class="col s12 l4">
-            <p>안녕하세요 Hello, I am a software developer experienced in Ruby/Rails, JavaScript and html/css . My favorite libraries to work with are React, Redux and Materializecss. I strive to write simple reusable code, collaborate with other developers, learn new technologies and express creativity. 
-            <p>When I'm not coding I enjoy reading,  playing with my cats, computer games, good food and learning. I am also studying Korean and hope to travel there in the future. I am currently open to new job opportunities so if you are a recruiter or know anyone who is hiring please reach out to me by <a href="mailto:m23.cullen@gmail.com">email</a> or call at <a href="tel:+15858310531">+1 (585) 831-0531</a>
-        </div>
-        <div class="col s12 l6 offset-l2">
-          <img src="img/me.png" alt="" class="responsive-img materialboxed">    
-        </div>
     </div>
   </section>
 
@@ -317,6 +252,7 @@
       $('.tooltipped').tooltip();
       $('.scrollspy').scrollSpy(); 
       $('.fixed-action-btn').floatingActionButton();
+      $('.modal').modal();
 
     });
   </script>
