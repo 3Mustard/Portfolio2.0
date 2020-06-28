@@ -9,15 +9,52 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <!-- my css sheet -->
-  <link rel="stylesheet" href="style.css">
   <title>Matthew Cullen</title>
+  <style>
+    body {
+      background-color: white;
+    }
+    header {
+      background: url(img/cats.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .link {
+      color:white;
+      text-decoration: none; 
+      background-color: none;
+    }
+    .resume-about-link {
+      color: #039be5;
+      text-decoration: none; 
+      background-color: none;
+    }
+    .page-footer {
+      padding-bottom: 1px;
+    }
+    .project-row {
+      margin-bottom: 60px;
+    }
+    nav {
+      position: relative;
+    }
+  </style>
 </head>
 <body>
 
   <!-- navbar -->
   <header>
-    <nav class="nav-wrapper pink lighten-3">
+    <nav class="nav-wrapper grey lighten-2">
       <div class="container scrollspy" id="nav">
         <a href="#" class="brand-logo grey-text text-darken-4 hide-on-med-and-down" >Matthew</a>
         <a href="#" class="sidenav-trigger" data-target="mobile-menu">
@@ -215,7 +252,29 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script src="script.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      // $(window).scroll(function() {
+      //   if($(window).scrollTop()>0){ //set the value to the height of anything above the navbar on page load.
+      //     $('nav').addClass('sticky-nav');
+      //   }else{
+      //     $('nav').removeClass('sticky-nav')
+      //   }
+      // });
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy(); 
+      $('.fixed-action-btn').floatingActionButton();
+      $('.modal').modal();
+      
+
+    });
+  </script>
   
 </body>
 </html>
