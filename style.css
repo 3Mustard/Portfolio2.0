@@ -2,7 +2,7 @@ body {
     background-color: white;
   }
   header {
-    background: url(img/parallax4.1.jpg);
+    background: url(img/cats.jpg);
     background-size: cover;
     background-position: center;
     min-height: 1000px;
@@ -33,5 +33,5 @@ body {
     margin-bottom: 60px;
   }
   nav {
-    position: relative;
+    opacity: .8;
   }
